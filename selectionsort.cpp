@@ -51,4 +51,11 @@ void display(){
     cout<<endl;
 }
 
+int main(){
+    input();
+    selectionSort();
+    display();
+    return 0;
+}
+
 
