@@ -29,7 +29,17 @@ void selectionSort(){
                 minIndex = i;
             }
         }
-        swap(arr[j], arr[minIndex]);
+        if (minIndex != j){
+            int temp = arr[j];
+            arr[j] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+        cout<<"Pass "<<j+1<<": ";
+        for (int k=0; k<n; k++){
+            cout<<arr[k]<<" ";
+        }
+        cout<<endl;
+
     }
 }
 
