@@ -22,14 +22,14 @@ void input(){
 }
 
 void selectionSort(){
-    for (int i=0; i<n-1; i++){
-        int minIndex = i;
-        for (int j=i+1; j<n; j++){
-            if (arr[j] < arr[minIndex]){
-                minIndex = j;
+    for (int j=0; j<n-1; j++){
+        int minIndex = j;
+        for (int i=j+1; i<n; i++){
+            if (arr[i] < arr[minIndex]){
+                minIndex = i;
             }
         }
-        swap(arr[i], arr[minIndex]);
+        swap(arr[j], arr[minIndex]);
     }
 }
 
